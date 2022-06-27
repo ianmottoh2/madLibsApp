@@ -1,5 +1,9 @@
 "use strict"
 
+//number of inputs
+let numberOfQuestions = 28; 
+
+
 let userInputs = [
     "1776",
     "J.S. Bach",
