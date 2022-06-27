@@ -3,39 +3,42 @@
 //number of inputs
 let numberOfQuestions = 28; 
 
-
-let userInputs = [
-    "1776",
-    "J.S. Bach",
-    "Nintendo 64",
-    "Bob Ross's School of Painting",
-    "dance partners",
-    "praying mantis",
-    "buttons",
-    "ballerinas",
-    "love letter",
-    "skipped",
-    "hopped",
-    "soft",
-    "it",
-    "soda can",
-    "burped",
-    "May, 4th 1983",
-    "42",
-    "socks",
-    "MoMA",
-    "London, England",
-    "strong",
-    "black hole",
-    "Liberachi",
-    "Cher",
-    "3000",
-    "bedtime story",
-    "explosion",
-    "derrigable",
-    "duck call",
-    "sing",
+let questionArray = [
+    `Enter a Year`,
+    `Enter a full name`,
+    `Enter a computer model`,
+    'Enter a school name',
+    'Enter a word about your friend',
+    'Enter a name of bug',
+    'Enter a computer part',
+    'Enter a proffesion',
+    'Enter a type off letter',
+    `Enter a verb`,
+    `Enter another verb`,
+    `Enter an adjective`,
+    `Enter a pronoun`,
+    `Enter a noun`,
+    `Enter a verb`,
+    `Enter a date`,
+    `Enter a number`,
+    `Enter a noun`,
+    `Enter a museum name`,
+    `Enter a city, state`,
+    `Enter an adjective`,
+    `Enter a physics noun`,
+    `Enter a full name`,
+    `Enter a number`,
+    `Enter a type of document`,
+    `Enter something bad`,
+    `Enter an old machine`,
+    `Enter a hunting tool`,
+    `Enter a verb`,
 ];
+
+let userInputs = [];
+for(let i = numberOfQuestions; i >= 0; i--) {
+    console.log(i);
+}
 
 let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]} at ${userInputs[3]}. It was at this time that ${userInputs[4]} discovered a ${userInputs[5]} had gotten trapped in one of the ${userInputs[6]} and was causing an error. The ${userInputs[7]} removed the ${userInputs[5]} and taped it in their ${userInputs[8]}, identifying it as the "first actual case of bug being ${userInputs[9]}."
 Word got out that the team had "${userInputs[10]}" the ${userInputs[2]}, hence leading to the phrase’s use in computing and ${userInputs[11]} culture. ${userInputs[1]} readily admitted that ${userInputs[12]} was not there when the incident occurred, but that didn’t stop it from becoming one of ${userInputs[1]}'s favorite ${userInputs[13]}s. ${userInputs[1]} ${userInputs[14]} of natural causes on January 1, ${userInputs[15]}, at the age of ${userInputs[16]}. For those interested, the offending ${userInputs[5]}'s ${userInputs[17]}, along with the original ${userInputs[8]}, can be seen at the ${userInputs[18]} in ${userInputs[19]}.
