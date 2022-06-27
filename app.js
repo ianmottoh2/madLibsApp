@@ -3,6 +3,7 @@
 //number of inputs
 let numberOfQuestions = 28; 
 
+//question that gonna be prompted
 let questionArray = [
     `Enter a Year`,
     `Enter a full name`,
@@ -35,9 +36,13 @@ let questionArray = [
     `Enter a verb`,
 ];
 
+let questionCounter = 0;
+
 let userInputs = [];
 for(let i = numberOfQuestions; i >= 0; i--) {
     console.log(i);
+    questionCounter++;
+    console.log(questionCounter);
 }
 
 let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]} at ${userInputs[3]}. It was at this time that ${userInputs[4]} discovered a ${userInputs[5]} had gotten trapped in one of the ${userInputs[6]} and was causing an error. The ${userInputs[7]} removed the ${userInputs[5]} and taped it in their ${userInputs[8]}, identifying it as the "first actual case of bug being ${userInputs[9]}."
