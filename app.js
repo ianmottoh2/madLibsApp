@@ -41,8 +41,19 @@ let questionCounter = 0;
 let userInputs = [];
 for(let i = numberOfQuestions; i >= 0; i--) {
     //console.log(`i = ${i}`);
-    console.log(questionArray[questionCounter] + `  | ${numberOfQuestions} question left`);
+
+    //generate prompt for user input
+    userInputs.push(
+        prompt (
+            questionArray[questionCounter] + `  | ${numberOfQuestions} questions left`
+        )
+    );
+
+    //to check user inputs
+    console.log(userInputs);
+
     questionCounter++;
+
     numberOfQuestions--;
     //console.log(questionCounter);
 }
@@ -51,4 +62,4 @@ let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} foun
 Word got out that the team had "${userInputs[10]}" the ${userInputs[2]}, hence leading to the phrase’s use in computing and ${userInputs[11]} culture. ${userInputs[1]} readily admitted that ${userInputs[12]} was not there when the incident occurred, but that didn’t stop it from becoming one of ${userInputs[1]}'s favorite ${userInputs[13]}s. ${userInputs[1]} ${userInputs[14]} of natural causes on January 1, ${userInputs[15]}, at the age of ${userInputs[16]}. For those interested, the offending ${userInputs[5]}'s ${userInputs[17]}, along with the original ${userInputs[8]}, can be seen at the ${userInputs[18]} in ${userInputs[19]}.
 And while this is the "${userInputs[20]}" use case of finding a ${userInputs[2]} ${userInputs[5]}, the original use of the word dates further back in ${userInputs[21]} to ${userInputs[22]}, who in an ${userInputs[23]} ${userInputs[24]} used the term "${userInputs[5]}" to refer to a technological ${userInputs[25]}. While he worked on the quadruplex ${userInputs[26]}, he said it needed a "${userInputs[5]} ${userInputs[27]} to ${userInputs[28]} properly."`;
 
-//console.log(originalStory);
+console.log(originalStory);
